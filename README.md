@@ -22,4 +22,4 @@ Features:
   2.3) Generation of new data (Randomly generate new data).
 4) Time and Space complexity of algorithm being visualized.
 
-Take a look at live version: https://vanquirenorton.github.io/Sorting_Algorithms_Visualizer/
+Take a look at live version: https://sorting-algorithms-visualizer-lime.vercel.app/
