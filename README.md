@@ -1,25 +1,12 @@
-# Sorting_Visualizer
+# React + Vite
 
-A web application showcasing the inner workings of sorting algorithms.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Implemented algorithms:
-1) Bubble sort
-2) Selection sort
-3) Insertion sort
-4) Merge sort
-5) Quick sort
-6) Heap sort
+Currently, two official plugins are available:
 
-Features:
-1) Colored representation of step being executed.
-  1.1) Blue:default
-  1.2) Yellow: Being compared
-  1.3) Red: Identified as in incorrect position and to be moved
-  1.4) Green: In correct position
-2) 3 Controls for visualizations
-  2.1) Speed of visualization (5 speed levels)
-  2.2) Data size ()
-  2.3) Generation of new data (Randomly generate new data).
-4) Time and Space complexity of algorithm being visualized.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Take a look at live version: https://sorting-algorithms-visualizer-lime.vercel.app/
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
