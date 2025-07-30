@@ -6,7 +6,7 @@ import './index.css';
 
 const App = () => {
   const [array, setArray] = useState([]);
-  const [arraySize, setArraySize] = useState(80);
+  const [arraySize, setArraySize] = useState(40);
   const [speed, setSpeed] = useState(4);
   const [isSorting, setIsSorting] = useState(false);
   const [complexity, setComplexity] = useState({ best: '', avg: '', worst: '', space: '' });

@@ -1,6 +1,6 @@
 import { animate } from './visualize';
 
-export function bubbleSort(arr, update, delay, done) {
+export function bubbleSort(arr, update, delay) {
   const a = [...arr.array];
   let n = a.length;
   let actions = [];

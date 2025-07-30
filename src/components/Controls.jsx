@@ -8,13 +8,11 @@ const Controls = ({
   isSorting, setIsSorting,
   array, setArray,
   setComplexity,
-  complexity
 }) => {
   const handleSort = (algo) => {
     if (isSorting) return;
     setIsSorting(true);
 
-    // Set complexity instantly
     switch (algo) {
       case 'Bubble':
         setComplexity({ best: 'O(n)', avg: 'O(n²)', worst: 'O(n²)', space: 'O(1)' });
@@ -35,7 +33,7 @@ const Controls = ({
         break;
     }
 
-    runSort(algo, array, setArray, speed, () => setIsSorting(false), () => {});
+    runSort(algo, array, setArray, speed, () => setIsSorting(false));
   };
 
   return (
@@ -61,13 +59,12 @@ const Controls = ({
       <div className="side-panel">
         <div className="sliders">
           <label>Size:</label>
-          <input type="range" min="20" max="150" value={arraySize} onChange={e => setArraySize(+e.target.value)} disabled={isSorting} />
+          <input type="range" min="5" max="50" value={arraySize} onChange={e => setArraySize(+e.target.value)} disabled={isSorting} />
           <label>Speed:</label>
-          <input type="range" min="1" max="5" value={speed} onChange={e => setSpeed(+e.target.value)} disabled={isSorting} />
+          <input type="range" min="1" max="8" value={speed} onChange={e => setSpeed(+e.target.value)} disabled={isSorting} />
         </div>
+        <button className="generate-btn" onClick={generateArray} disabled={isSorting}>Generate New Array</button>
       </div>
-
-      <button className="generate-btn" onClick={generateArray} disabled={isSorting}>Generate New Array</button>
     </div>
   );
 };

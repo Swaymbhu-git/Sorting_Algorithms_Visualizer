@@ -93,7 +93,7 @@
 
 .array-bar {
   background-color: blue;
-  width: 4px;
+  width: 15px;
   margin: 0 1px;
   transition: height 0.2s ease, background-color 0.2s ease;
 }
@@ -104,23 +104,24 @@
 
 .side-panel {
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 .sliders {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  gap: 1.5rem;
+  align-items: center;
   text-align: center;
 }
 
 .generate-btn {
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  padding: 0.75rem 1.25rem;
+  position: relative;
+  /* right: 1rem;
+  bottom: 1rem; */
+  padding: 0.55rem 1rem;
   font-size: 1rem;
   background-color: #00c853;
   color: white;
